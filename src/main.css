@@ -1,0 +1,24 @@
+@import 'vars.css';
+@import 'grd';
+
+body {
+	margin: 0;
+	color: var(--black-color);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	font-weight: normal;
+}
+
+main {
+	width: 100%;
+}
+
+.amaze {
+	font: normal;
+}
+
+.cii {
+	text-shadow: pink;
+}
