@@ -4,7 +4,7 @@
   "description": "Bootstrap killa",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --ignore dist/ -e js,css src/index.js",
+    "dev": "nodemon --ignore dist/ -e js,css,html src/index.js",
     "prod": "NODE_ENV=production node src/index.js"
   },
   "keywords": [
