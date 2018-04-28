@@ -1,6 +1,7 @@
 @import 'grd';
 @import 'vars.css';
 
+@import 'nav.css';
 @import 'buttons.css';
 
 body {

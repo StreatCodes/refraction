@@ -1,5 +1,9 @@
 :root {
+	/* COLORS */
 	--black: #333333;
 	--primary: rgb(10, 161, 231);
 	--white: #eee;
+
+	/* PAGE SETTINGS */
+	--page-width: 1200px;
 }
