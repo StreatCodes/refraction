@@ -17,7 +17,6 @@
   "dependencies": {
     "autoprefixer": "^8.2.0",
     "cssnano": "^3.10.0",
-    "grd": "^1.4.0",
     "nodemon": "^1.17.3",
     "postcss-cli": "^5.0.0",
     "postcss-css-variables": "^0.8.1",

@@ -12,6 +12,9 @@
 		main {margin: 0 auto; width: 1200px; padding: 20px;}
 	</style>
 	<link rel="stylesheet" href="/dist/bundle.css">
+	<link rel="stylesheet" href="/prism.css">
+	<script src="/helper.js" async></script>
+	<script src="/prism.js" asnyc></script>
 </head>
 <body>
 	<nav>
@@ -30,10 +33,12 @@
 	</nav>
 	<main>
 		<h2>Grid</h2>
-		<div class="Grid">
-			<div class="Cell -3of12">3of12</div>
-			<div class="Cell -9of12">9of12</div>
-		</div>
+		<pre><code class="language-markup html-ify">
+			<div class="grid">
+				<div class="cell -3of12">3of12</div>
+				<div class="cell -9of12">9of12</div>
+			</div>
+		</code></pre>
 		<h2>Forms</h2>
 		<button>Submit</button>
 		<h2>Tables</h2>
