@@ -7,17 +7,18 @@
 	<title>StreatStrap</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet"> 
+	<link rel="stylesheet" href="/prism.css">
+	<link rel="stylesheet" href="/dist/bundle.css">
 	<style>
 		body{font-family: 'Roboto', sans-serif; font-weight: 500}
 		main {margin: 0 auto; width: 1200px; padding: 20px;}
+		pre[class*="language-"] {display: inline-block; max-width: 100%; margin: 0;}
 	</style>
-	<link rel="stylesheet" href="/dist/bundle.css">
-	<link rel="stylesheet" href="/prism.css">
 	<script src="/helper.js" async></script>
 	<script src="/prism.js" asnyc></script>
 </head>
 <body>
-	<nav>
+	<nav id="nav">
 		<div class="nav-wrap">
 			<div class="left">
 				<a>left</a>
@@ -33,11 +34,13 @@
 	</nav>
 	<main>
 		<h2>Grid</h2>
-		<pre><code class="language-markup html-ify">
-			<div class="grid">
-				<div class="cell -3of12">3of12</div>
-				<div class="cell -9of12">9of12</div>
-			</div>
+		<pre><code class="language-html">
+			<script type="prism-html-markup">
+				<div class="grid">
+					<div class="cell -3of12">3of12</div>
+					<div class="cell -9of12">9of12</div>
+				</div>
+			</script>
 		</code></pre>
 		<h2>Forms</h2>
 		<button>Submit</button>
@@ -50,6 +53,7 @@
 		<h2>Tid Bits</h2>
 		<h3>Scroll spy</h3>
 		<h3>Shadows</h3>
+		<div style="height: 1000px;"></div>
 	</main>
 </body>
 </html>

@@ -1,11 +1,12 @@
 nav {
+    background-color: white;
     position: sticky;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     top: 0;
     box-shadow: 0px 3px 11px 1px #69696900;
-    transition: padding 300ms, box-shadow 300ms;
+    transition: padding 200ms, box-shadow 200ms;
 }
 
 nav.floating {

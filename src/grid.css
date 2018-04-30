@@ -23,4 +23,4 @@
 .cell.\-9of12    { width: calc(100% * 9 / 12); }
 .cell.\-10of12   { width: calc(100% * 10 / 12); }
 .cell.\-11of12   { width: calc(100% * 11 / 12); }
-.cell.\-12of12 { width: 100%; }
+.cell.\-12of12   { width: 100%; }
