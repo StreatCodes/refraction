@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>StreatStrap</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
 	<link rel="stylesheet" href="/prism.css">
 	<link rel="stylesheet" href="/dist/bundle.css">
 	<style>
-		body{font-family: 'Roboto', sans-serif; font-weight: 500}
-		main {margin: 0 auto; width: 1200px; padding: 20px;}
-		pre[class*="language-"] {display: inline-block; max-width: 100%; margin: 0;}
+		body {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 500
+		}
+
+		main {
+			margin: 0 auto;
+			width: var(--page-width);
+			padding: 20px;
+		}
+
+		pre[class*="language-"] {
+			display: block;
+			max-width: 100%;
+			margin: 0 0 20px;
+		}
 	</style>
 	<script src="/helper.js" async></script>
 	<script src="/prism.js" asnyc></script>
 </head>
+
 <body>
 	<nav id="nav">
 		<div class="nav-wrap">
 			<div class="left">
-				<a>left</a>
-				<a>left</a>
-				<a>left</a>
+				<a>Streatstrap</a>
 			</div>
 			<div class="right">
-				<a>right</a>
-				<a>right</a>
-				<a>right</a>
+				<a>scroll spy</a>
 			</div>
 		</div>
 	</nav>
@@ -42,28 +53,109 @@
 				</div>
 			</script>
 		</code></pre>
+
 		<h2>Forms</h2>
-		<label>
-			<span>A simple text input</span>
-			<input type="text" placeholder="Cool text!">
-		</label>
-		<label>
-			<span>A simple password input</span>
-			<input type="password" placeholder="secure_password">
-		</label>
-		<label>
-			<input type="checkbox">
-			<span>Check</span>
-		</label>
-		<label>
-			<input type="checkbox">
-			<span>Me</span>
-		</label>
-		<label>
-			<input type="checkbox">
-			<span>Out!</span>
-		</label>
+		<h3><strong>Text fields</strong></h3>
+		<div class="grid">
+			<div class="cell -6of12">
+				<label>
+					<span>A simple text input</span>
+					<input type="text" placeholder="Cool text!">
+				</label>
+			</div>
+			<div class="cell -6of12">
+				<label>
+					<span>A simple password input</span>
+					<input type="password" placeholder="secure_password">
+				</label>
+			</div>
+			<div class="cell -12of12">
+				<label>
+					<span>A simple textarea</span>
+					<textarea placeholder="Write me a poem!"></textarea>
+				</label>
+			</div>
+			<div class="cell -12of12">
+				<pre><code class="language-html">
+					<script type="prism-html-markup">
+							<label>
+								<span>A simple text input</span>
+								<input type="text" placeholder="Cool text!">
+							</label>
+							<label>
+								<span>A simple textarea</span>
+								<textarea placeholder="Write me a poem!"></textarea>
+							</label>
+					</script>
+				</code></pre>
+			</div>
+		</div>
+
+		<h3><strong>Text fields</strong></h3>
+		<div class="grid">
+			<div class="cell -6of12">
+				<p>Checkboxs:</p>
+				<label>
+					<input type="checkbox">
+					<span>Check</span>
+				</label>
+				<label>
+					<input type="checkbox">
+					<span>Me</span>
+				</label>
+				<label>
+					<input type="checkbox">
+					<span>Out!</span>
+				</label>
+			</div>
+			<div class="cell -6of12">
+				<p>Radios:</p>
+				<label>
+					<input name="test" type="radio">
+					<span>One</span>
+				</label>
+				<label>
+					<input name="test" type="radio">
+					<span>Way</span>
+				</label>
+				<label>
+					<input name="test" type="radio">
+					<span>Or another!</span>
+				</label>
+			</div>
+			<div class="cell -6of12">
+				<pre><code class="language-html">
+					<script type="prism-html-markup">
+						<label>
+							<input type="checkbox">
+							<span>Check</span>
+						</label>
+						<label>
+							<input type="checkbox">
+							<span>Me</span>
+						</label>
+					</script>
+				</code></pre>
+			</div>
+			<div class="cell -6of12">
+				<pre><code class="language-html">
+					<script type="prism-html-markup">
+						<label>
+							<input name="test" type="radio">
+							<span>One</span>
+						</label>
+						<label>
+							<input name="test" type="radio">
+							<span>Way</span>
+						</label>
+					</script>
+				</code></pre>
+			</div>
+		</div>
+
+
 		<button>Submit</button>
+		</div>
 		<h2>Tables</h2>
 		<h2>Code</h2>
 		<h2>Dropdowns</h2>
@@ -76,4 +168,5 @@
 		<div style="height: 1000px;"></div>
 	</main>
 </body>
+
 </html>

@@ -2,8 +2,10 @@
 	/* COLORS */
 	--black: #303030;
 	--primary: rgb(10, 161, 231);
+	--primary-light: rgb(93, 191, 236);
 	--white: #eee;
 
 	/* PAGE SETTINGS */
-	--page-width: 1200px;
+	--page-width: 800px;
+	--grid-gutters: 5px;
 }
