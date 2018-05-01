@@ -2,6 +2,7 @@
 @import 'grid.css';
 @import 'nav.css';
 @import 'inputs.css';
+@import 'tables.css';
 
 body {
 	margin: 0 0 10px 0;

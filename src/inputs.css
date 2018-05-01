@@ -15,9 +15,11 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"],
+input[type="tel"],
 textarea {
     box-sizing: border-box;
     display: block;
+    width: 100%;
     margin-bottom: 20px;
     padding: 10px 14px;
     border: 0;
@@ -37,6 +39,7 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
+input[type="tel"]:focus,
 textarea:focus {
     border-color: var(--primary);
     background-color: white;
@@ -78,6 +81,10 @@ label > input[type="radio"] ~ span::before {
 
 label > input[type="radio"] ~ span::before {
     border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    line-height: 14px;
+    font-size: 19px;
 }
 
 label > input[type="checkbox"]:checked ~ span::before,

@@ -27,6 +27,11 @@
 			max-width: 100%;
 			margin: 0 0 20px;
 		}
+
+		.sample-cell {
+			background-color: #c0e7ff;
+			padding: 5px;
+		}
 	</style>
 	<script src="/helper.js" async></script>
 	<script src="/prism.js" asnyc></script>
@@ -44,83 +49,129 @@
 		</div>
 	</nav>
 	<main>
+		<h2>Project structure</h2>
+		<p></p>
 		<h2>Grid</h2>
+		<p>The grid is a simple lightweight 12 column setup based on flexbox. It's just
+			<a href="https://github.com/1000ch/grd">grd</a> with gutters and support for mobile.</p>
+		<div class="grid">
+			<div class="cell -5of12 sample-cell">3 of 12</div>
+			<div class="cell -7of12 sample-cell">9 of 12</div>
+		</div>
+		<div class="grid">
+			<div class="cell -2of12 sample-cell">2 of 12</div>
+			<div class="cell -7of12 sample-cell">7 of 12</div>
+			<div class="cell -3of12 sample-cell">3 of 12</div>
+		</div>
 		<pre><code class="language-html">
 			<script type="prism-html-markup">
 				<div class="grid">
-					<div class="cell -3of12">3of12</div>
-					<div class="cell -9of12">9of12</div>
+					<div class="cell -5of12">3 of 12</div>
+					<div class="cell -7of12">9 of 12</div>
+				</div>
+				<div class="grid">
+					<div class="cell -2of12">2 of 12</div>
+					<div class="cell -7of12">7 of 12</div>
+					<div class="cell -3of12">3 of 12</div>
 				</div>
 			</script>
 		</code></pre>
 
 		<h2>Forms</h2>
-		<h3><strong>Text fields</strong></h3>
+		<h3>
+			<strong>Text fields</strong>
+		</h3>
 		<div class="grid">
-			<div class="cell -6of12">
+			<div class="cell -4of12">
 				<label>
-					<span>A simple text input</span>
-					<input type="text" placeholder="Cool text!">
+					<span>Name</span>
+					<input type="text" placeholder="Killa Streats">
 				</label>
 			</div>
-			<div class="cell -6of12">
+			<div class="cell -4of12">
 				<label>
-					<span>A simple password input</span>
-					<input type="password" placeholder="secure_password">
+					<span>Email</span>
+					<input type="email" placeholder="streats@example.com">
 				</label>
 			</div>
-			<div class="cell -12of12">
+			<div class="cell -4of12">
 				<label>
-					<span>A simple textarea</span>
-					<textarea placeholder="Write me a poem!"></textarea>
+					<span>Phone</span>
+					<input type="tel" placeholder="+64 123 456 789">
+				</label>
+			</div>
+			<div class="cell -4of12">
+				<label>
+					<span>Password</span>
+					<input type="password" placeholder="s3cUr3BoiZ">
+				</label>
+			</div>
+			<div class="cell -8of12">
+				<label>
+					<span>Describe yourself</span>
+					<textarea placeholder="I'm a really cool guy"></textarea>
 				</label>
 			</div>
 			<div class="cell -12of12">
 				<pre><code class="language-html">
 					<script type="prism-html-markup">
-							<label>
-								<span>A simple text input</span>
-								<input type="text" placeholder="Cool text!">
-							</label>
-							<label>
-								<span>A simple textarea</span>
-								<textarea placeholder="Write me a poem!"></textarea>
-							</label>
+						<label>
+							<span>A simple text input</span>
+							<input type="text" placeholder="Cool text!">
+						</label>
+						<label>
+							<span>A simple textarea</span>
+							<textarea placeholder="Write me a poem!"></textarea>
+						</label>
 					</script>
 				</code></pre>
 			</div>
 		</div>
 
-		<h3><strong>Text fields</strong></h3>
+		<h3>
+			<strong>Checkboxs and radios</strong>
+		</h3>
 		<div class="grid">
 			<div class="cell -6of12">
-				<p>Checkboxs:</p>
+				<p>Which lagnuages are good?</p>
 				<label>
-					<input type="checkbox">
-					<span>Check</span>
+					<input type="checkbox" checked>
+					<span>Go</span>
+				</label>
+				<label>
+					<input type="checkbox" checked>
+					<span>Rust</span>
 				</label>
 				<label>
 					<input type="checkbox">
-					<span>Me</span>
+					<span>Perl</span>
+				</label>
+				<label>
+					<input type="checkbox" checked>
+					<span>Javascript</span>
 				</label>
 				<label>
 					<input type="checkbox">
-					<span>Out!</span>
+					<span>Java</span>
+				</label>
+				<label>
+					<input type="checkbox">
+					<span>Python</span>
 				</label>
 			</div>
 			<div class="cell -6of12">
-				<p>Radios:</p>
+				<p>What drink would you like?</p>
 				<label>
 					<input name="test" type="radio">
-					<span>One</span>
+					<span>Tastes good and cheap</span>
 				</label>
 				<label>
 					<input name="test" type="radio">
-					<span>Way</span>
+					<span>Tastes good and strong</span>
 				</label>
 				<label>
 					<input name="test" type="radio">
-					<span>Or another!</span>
+					<span>Strong and cheap</span>
 				</label>
 			</div>
 			<div class="cell -6of12">
@@ -153,17 +204,100 @@
 			</div>
 		</div>
 
-
-		<button>Submit</button>
+		<h3>
+			<strong>Select boxs and buttons</strong>
+		</h3>
+		<div class="grid">
+			<div class="cell -6of12">
+				<label>
+					<span>Select box</span>
+					<select>
+						<option>Name</option>
+					</select>
+				</label>
+			</div>
+			<div class="cell -6of12">
+				<button>Do something cool</button>
+				<button>Wow!</button>
+				<button type="submit">Submit</button>
+			</div>
 		</div>
 		<h2>Tables</h2>
-		<h2>Code</h2>
-		<h2>Dropdowns</h2>
-		<h2>Modals</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Company</th>
+					<th>Contact</th>
+					<th>Country</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Alfreds Futterkiste</td>
+					<td>Maria Anders</td>
+					<td>Germany</td>
+				</tr>
+				<tr>
+					<td>Centro comercial Moctezuma</td>
+					<td>Francisco Chang</td>
+					<td>Mexico</td>
+				</tr>
+				<tr>
+					<td>Ernst Handel</td>
+					<td>Roland Mendel</td>
+					<td>Austria</td>
+				</tr>
+				<tr>
+					<td>Island Trading</td>
+					<td>Helen Bennett</td>
+					<td>UK</td>
+				</tr>
+				<tr>
+					<td>Laughing Bacchus Winecellars</td>
+					<td>Yoshi Tannamuri</td>
+					<td>Canada</td>
+				</tr>
+				<tr>
+					<td>Magazzini Alimentari Riuniti</td>
+					<td>Giovanni Rovelli</td>
+					<td>Italy</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>Tables are just standard HTML</p>
+		<pre><code class="language-html">
+			<script type="prism-html-markup">
+				<table>
+					<thead>
+						<tr>
+							<th>Company</th>
+							<th>Contact</th>
+							<th>Country</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Alfreds Futterkiste</td>
+							<td>Maria Anders</td>
+							<td>Germany</td>
+						</tr>
+						<tr>
+							<td>Centro comercial Moctezuma</td>
+							<td>Francisco Chang</td>
+							<td>Mexico</td>
+						</tr>
+					</tbody>
+				</table>
+			</script>
+		</code></pre>
+		
 		<h2>Navigation</h2>
-		<h2>Colors</h2>
+		<h2>Modals</h2>
+		<h2>Variables</h2>
+		<h2>Code</h2>
 		<h2>Tid Bits</h2>
 		<h3>Scroll spy</h3>
+		<h3>Icons</h3>
 		<h3>Shadows</h3>
 		<div style="height: 1000px;"></div>
 	</main>
