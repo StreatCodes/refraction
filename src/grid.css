@@ -12,15 +12,15 @@
 
 .cell            { box-sizing: border-box; flex-shrink: 0; }
 .cell.\-fill     { width: 0; min-width: 0; flex-grow: 1; }
-.cell.\-1of12    { width: calc(100% * 1 / 12 - var(--grid-gutters)); }
-.cell.\-2of12    { width: calc(100% * 2 / 12 - var(--grid-gutters)); }
-.cell.\-3of12    { width: calc(100% * 3 / 12 - var(--grid-gutters)); }
-.cell.\-4of12    { width: calc(100% * 4 / 12 - var(--grid-gutters)); }
-.cell.\-5of12    { width: calc(100% * 5 / 12 - var(--grid-gutters)); }
-.cell.\-6of12    { width: calc(100% * 6 / 12 - var(--grid-gutters)); }
-.cell.\-7of12    { width: calc(100% * 7 / 12 - var(--grid-gutters)); }
-.cell.\-8of12    { width: calc(100% * 8 / 12 - var(--grid-gutters)); }
-.cell.\-9of12    { width: calc(100% * 9 / 12 - var(--grid-gutters)); }
-.cell.\-10of12   { width: calc(100% * 10 / 12 - var(--grid-gutters)); }
-.cell.\-11of12   { width: calc(100% * 11 / 12 - var(--grid-gutters)); }
+.cell.\-1of12    { width: calc(100% * 1 / 12 - 10.0px); }
+.cell.\-2of12    { width: calc(100% * 2 / 12 - 10px); }
+.cell.\-3of12    { width: calc(100% * 3 / 12 - 9px); }
+.cell.\-4of12    { width: calc(100% * 4 / 12 - 9px); }
+.cell.\-5of12    { width: calc(100% * 5 / 12 - 8px); }
+.cell.\-6of12    { width: calc(100% * 6 / 12 - 7px); }
+.cell.\-7of12    { width: calc(100% * 7 / 12 - 6px); }
+.cell.\-8of12    { width: calc(100% * 8 / 12 - 5px); }
+.cell.\-9of12    { width: calc(100% * 9 / 12 - 3px); }
+.cell.\-10of12   { width: calc(100% * 10 / 12 - 2px); }
+.cell.\-11of12   { width: calc(100% * 11 / 12 - 2px); }
 .cell.\-12of12   { width: 100%; }
