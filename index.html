@@ -52,27 +52,26 @@
 		<h2>Project structure</h2>
 		<p></p>
 		<h2>Grid</h2>
-		<p>The grid is a simple lightweight 12 column setup based on flexbox. It's just
-			<a href="https://github.com/1000ch/grd">grd</a> with gutters and support for mobile.</p>
+		<p>It's 2018, use css grid ya' prick</p>
 		<div class="grid">
-			<div class="cell -5of12 sample-cell">3 of 12</div>
-			<div class="cell -7of12 sample-cell">9 of 12</div>
+			<div class="span5 sample-cell">3 of 12</div>
+			<div class="span7 sample-cell">9 of 12</div>
 		</div>
 		<div class="grid">
-			<div class="cell -2of12 sample-cell">2 of 12</div>
-			<div class="cell -7of12 sample-cell">7 of 12</div>
-			<div class="cell -3of12 sample-cell">3 of 12</div>
+			<div class="span2 sample-cell">2 of 12</div>
+			<div class="span7 sample-cell">7 of 12</div>
+			<div class="span3 sample-cell">3 of 12</div>
 		</div>
 		<pre><code class="language-html">
 			<script type="prism-html-markup">
 				<div class="grid">
-					<div class="cell -5of12">3 of 12</div>
-					<div class="cell -7of12">9 of 12</div>
+					<div class="span5 sample-cell">3 of 12</div>
+					<div class="span7 sample-cell">9 of 12</div>
 				</div>
 				<div class="grid">
-					<div class="cell -2of12">2 of 12</div>
-					<div class="cell -7of12">7 of 12</div>
-					<div class="cell -3of12">3 of 12</div>
+					<div class="span2 sample-cell">2 of 12</div>
+					<div class="span7 sample-cell">7 of 12</div>
+					<div class="span3 sample-cell">3 of 12</div>
 				</div>
 			</script>
 		</code></pre>
@@ -82,37 +81,37 @@
 			<strong>Text fields</strong>
 		</h3>
 		<div class="grid">
-			<div class="cell -4of12">
+			<div class="span4">
 				<label>
 					<span>Name</span>
 					<input type="text" placeholder="Killa Streats">
 				</label>
 			</div>
-			<div class="cell -4of12">
+			<div class="span4">
 				<label>
 					<span>Email</span>
 					<input type="email" placeholder="streats@example.com">
 				</label>
 			</div>
-			<div class="cell -4of12">
+			<div class="span4">
 				<label>
 					<span>Phone</span>
 					<input type="tel" placeholder="+64 123 456 789">
 				</label>
 			</div>
-			<div class="cell -4of12">
+			<div class="span4">
 				<label>
 					<span>Password</span>
 					<input type="password" placeholder="s3cUr3BoiZ">
 				</label>
 			</div>
-			<div class="cell -8of12">
+			<div class="span8">
 				<label>
 					<span>Describe yourself</span>
 					<textarea placeholder="I'm a really cool guy"></textarea>
 				</label>
 			</div>
-			<div class="cell -12of12">
+			<div class="span12">
 				<pre><code class="language-html">
 					<script type="prism-html-markup">
 						<label>
@@ -132,7 +131,7 @@
 			<strong>Checkboxs and radios</strong>
 		</h3>
 		<div class="grid">
-			<div class="cell -6of12">
+			<div class="span6">
 				<p>Which lagnuages are good?</p>
 				<label>
 					<input type="checkbox" checked>
@@ -159,7 +158,7 @@
 					<span>Python</span>
 				</label>
 			</div>
-			<div class="cell -6of12">
+			<div class="span6">
 				<p>What drink would you like?</p>
 				<label>
 					<input name="test" type="radio">
@@ -174,7 +173,7 @@
 					<span>Strong and cheap</span>
 				</label>
 			</div>
-			<div class="cell -6of12">
+			<div class="span6">
 				<pre><code class="language-html">
 					<script type="prism-html-markup">
 						<label>
@@ -188,7 +187,7 @@
 					</script>
 				</code></pre>
 			</div>
-			<div class="cell -6of12">
+			<div class="span6">
 				<pre><code class="language-html">
 					<script type="prism-html-markup">
 						<label>
@@ -208,7 +207,7 @@
 			<strong>Select boxs and buttons</strong>
 		</h3>
 		<div class="grid">
-			<div class="cell -6of12">
+			<div class="span6">
 				<label>
 					<span>Select box</span>
 					<select>
@@ -216,7 +215,7 @@
 					</select>
 				</label>
 			</div>
-			<div class="cell -6of12">
+			<div class="span6">
 				<button>Do something cool</button>
 				<button>Wow!</button>
 				<button type="submit">Submit</button>
