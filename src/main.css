@@ -1,5 +1,4 @@
 @import 'fonts.css';
-
 @import 'vars.css';
 @import 'grid.css';
 @import 'nav.css';
@@ -7,6 +6,7 @@
 @import 'tables.css';
 
 body {
+	font-family: 'Roboto', sans-serif;
 	margin: 0 0 10px 0;
 	color: var(--black);
 }
