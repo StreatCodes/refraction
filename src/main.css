@@ -20,6 +20,10 @@ p {
 	line-height: 180%;
 }
 
+a{
+	cursor: pointer;
+}
+
 strong {
 	font-weight: 500;
 }
@@ -27,6 +31,7 @@ strong {
 header {
 	background: linear-gradient(20deg, #00dbde, #fc00ff);
 	padding:  120px 20px 120px;
+	margin-bottom: 30px;
 }
 
 header > h1 {
