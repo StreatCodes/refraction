@@ -1,4 +1,4 @@
-## StreatStrap
+## Refraction
 
 A simple lightweight CSS lib which can kickstart a project, (basic stuff like grid, nice form inputs, nice typography, common elements and sane defaults). The development library includes a live reload envoriment so saving a file with refresh the browser page and instantly show you the results.
 
