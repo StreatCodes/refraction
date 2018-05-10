@@ -29,6 +29,14 @@
 			color: white;
 			text-align: center;
 		}
+
+		h2[id]::before, h3[id]::before, h4[id]::before {
+			display: block;
+			height: 130px;
+			margin-top: -130px;
+			visibility: hidden;
+			content: "";
+		}
 	</style>
 	<script src="/helper.js" async></script>
 	<script src="/prism.js" asnyc></script>
@@ -42,10 +50,15 @@
 			<div class="right">
 				<a id="spy">Top</a>
 				<div class="sub-menu">
-					<a>scroll spy</a>
-					<a>scroll spy</a>
-					<a>scroll spy</a>
-					<a>scroll spy</a>
+					<a href="#about">About</a>
+					<a href="#grid">Grid</a>
+					<a href="#forms">Forms</a>
+					<a href="#tables">Tables</a>
+					<a href="#navigation">Navigation</a>
+					<a href="#modals">Modals</a>
+					<a href="#variables">Variables</a>
+					<a href="#code">Code</a>
+					<a href="#tid-bits">Tid Bits</a>
 				</div>
 			</div>
 		</div>
@@ -307,7 +320,7 @@
 			</script>
 		</code></pre>
 		
-		<h2 spy="Navigation" id="tables">Navigation</h2>
+		<h2 spy="Navigation" id="navigation">Navigation</h2>
 		
 		<pre><code class="language-html">
 			<script type="prism-html-markup">

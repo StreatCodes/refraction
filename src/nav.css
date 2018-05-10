@@ -61,9 +61,10 @@ nav>div.nav-wrap:hover div.sub-menu{
 
 nav div.sub-menu a {
 	white-space: nowrap;
-	padding: 0 10px 10px;
+	padding: 0 2px 5px;
+	margin: 0 6px 5px;
 }
 
 nav div.sub-menu a.active {
-	border-bottom: solid 2px var(--primary);
+	border-bottom: solid 2px var(--primary-light);
 }

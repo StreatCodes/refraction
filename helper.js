@@ -6,7 +6,6 @@ window.addEventListener('scroll', () => {
 	}
 
 	let spies = document.querySelectorAll('[spy]');
-	// spies.sort((a,b) => {return a.getBoundingClientRect().top - b.getBoundingClientRect().top});
 	let currentSpied = null;
 
 	for(let spy of spies) {
@@ -17,4 +16,14 @@ window.addEventListener('scroll', () => {
 		}
 	}
 	document.getElementById('spy').innerText = currentSpied.getAttribute('spy');
+
+	let menuItems = document.querySelectorAll('.sub-menu > a');
+
+	for(let item of menuItems) {
+		if(item.getAttribute('href') === `#${currentSpied.id}`){
+			item.classList.add('active');
+		} else {
+			item.classList.remove('active');
+		}
+	}
 });

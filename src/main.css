@@ -21,7 +21,16 @@ p {
 }
 
 a{
+	text-decoration: none;
 	cursor: pointer;
+}
+
+a:link, a:visited {
+	color: var(--primary);
+}
+
+a:hover, a:active {
+	color: var(--primary-light);
 }
 
 strong {
