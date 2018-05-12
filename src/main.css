@@ -59,3 +59,10 @@ header > h1 {
 	letter-spacing: 8px;
 	font-weight: 300;
 }
+
+footer {
+	width: var(--page-width);
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+}

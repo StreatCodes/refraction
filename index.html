@@ -58,7 +58,7 @@
 					<a href="#modals">Modals</a>
 					<a href="#variables">Variables</a>
 					<a href="#code">Code</a>
-					<a href="#tid-bits">Tid Bits</a>
+					<a href="#javascript">Javascript</a>
 				</div>
 			</div>
 		</div>
@@ -387,19 +387,80 @@
 		<hr />
 
 		<h2 spy="Variables" id="variables">Variables</h2>
+		<p>You can modify the basic appearance of Refraction just by making changes to <code>vars.css</code>. We use native CSS variables that get parsed at build time with <code>postcss-css-variables</code> a PostCSS plugin. This way we can keep compatability with IE11. PostCSS is a powerful modern css tool that uses javascript plugins to transform CSS.</p>
 
 		<hr />
 
 		<h2 spy="Code" id="code">Code</h2>
+		<p>Refraction doesn't include any code highlighting by default. This page uses Prism.js to highlight and style code. As code snippets are rarely included on traditional sites it's best to keep the libraries seperate to maintain a small codebase.</p>
 
 		<hr />
 
-		<h2 spy="Tid Bits" id="tid-bits">Tid Bits</h2>
+		<h2 spy="Javascript" id="javascript">Javascript</h2>
+		<p>You can accomplish alot with a few simple lines of modern javascript and you really don't need JQuery. Below is an overview of all the javascript that is used on this page. If you're going to be modifying the DOM then you should probably be using a frontend framework like VueJS or Preact (3KB version of React) but if you're doing basic stuff like the things done on this page then you can easily get away with some vanilla javascript.</p>
+		<h3>Nav bar</h3>
+		<p>The nav bar has two one liners to add or remove a class depending on whether the page is scrolled, it's pretty straight forward.</p>
+		<pre><code class="language-javascript">
+			window.addEventListener('scroll', () => {
+				if (window.pageYOffset > 0) {
+					document.getElementById('nav').classList.add('floating');
+				} else {
+					document.getElementById('nav').classList.remove('floating');
+				}
+			});
+		</code></pre>
 
 		<h3>Scroll spy</h3>
-		<h3>Icons</h3>
-		<h3>Shadows</h3>
+		<p>There is a bit more to Scroll spy as we're manually applying classes and updating text. First we're checking what section of the page we're up to based on any elements with the <code>spy</code> attribute. Then set the text in the nav bar and finally add the <code>active</code> class to the current item in the sub-menu.</p>
+		<pre><code class="language-javascript">
+			window.addEventListener('scroll', () => {
+				let spies = document.querySelectorAll('[spy]');
+				let currentSpied = null;
+
+				for(let spy of spies) {
+					if(spy.getBoundingClientRect().top - 100 < 0) {
+						currentSpied = spy;
+					} else {
+						break;
+					}
+				}
+				document.getElementById('spy').innerText = currentSpied.getAttribute('spy');
+
+				let menuItems = document.querySelectorAll('.sub-menu > a');
+
+				for(let item of menuItems) {
+					if(item.getAttribute('href') === `#${currentSpied.id}`){
+						item.classList.add('active');
+					} else {
+						item.classList.remove('active');
+					}
+				}
+			});
+		</code></pre>
+
+		<h3>Modals</h3>
+		<p>For the modal code, we've got a simple helper class to active (or potentially deactivating) a modal that we can include inline in our HTML onclick events. Then we've got a click event listener for the modal-wrap elements, which makes sure the backdrop is clicked and now the modal inside.</p>
+		<pre><code class="language-javascript">
+			function toggleModal(modalId) {
+				document.getElementById(modalId).classList.toggle('active');
+			}
+			
+			window.addEventListener('load', event => {
+				const modalWraps = document.querySelectorAll('.modal-wrap');
+			
+				for(let wrap of modalWraps) {
+					wrap.addEventListener('click', event => {
+						if (event.target === wrap) {
+							event.target.classList.toggle('active');
+						}
+					});
+				}
+			});
+		</code></pre>
 	</main>
+	<footer>
+		<i>That's all folks!</i>
+	</footer>
 </body>
 
 </html>
