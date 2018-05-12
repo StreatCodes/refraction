@@ -63,6 +63,7 @@ nav div.sub-menu a {
 	white-space: nowrap;
 	padding: 0 2px 5px;
 	margin: 0 6px 5px;
+	color: var(--black);
 }
 
 nav div.sub-menu a.active {

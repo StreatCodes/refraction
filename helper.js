@@ -27,3 +27,19 @@ window.addEventListener('scroll', () => {
 		}
 	}
 });
+
+function toggleModal(modalId) {
+	document.getElementById(modalId).classList.toggle('active');
+}
+
+window.addEventListener('load', event => {
+	const modalWraps = document.querySelectorAll('.modal-wrap');
+
+	for(let wrap of modalWraps) {
+		wrap.addEventListener('click', event => {
+			if (event.target === wrap) {
+				event.target.classList.toggle('active');
+			}
+		});
+	}
+});
