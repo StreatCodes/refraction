@@ -81,10 +81,10 @@ label > input[type="radio"] ~ span::before {
 
 label > input[type="radio"] ~ span::before {
 	border-radius: 50%;
-	width: 17px;
-	height: 17px;
-	line-height: 14px;
-	font-size: 19px;
+	width: 18px;
+	height: 18px;
+	line-height: 16px;
+	font-size: 20px;
 }
 
 label > input[type="checkbox"]:checked ~ span::before,
