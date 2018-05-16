@@ -6,6 +6,10 @@
 @import 'tables.css';
 @import 'modal.css';
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	margin: 0 0 10px 0;

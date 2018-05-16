@@ -16,8 +16,8 @@ input[type="password"],
 input[type="email"],
 input[type="number"],
 input[type="tel"],
+select,
 textarea {
-	box-sizing: border-box;
 	display: block;
 	width: 100%;
 	margin-bottom: 20px;
@@ -40,8 +40,23 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="tel"]:focus,
+select:focus,
 textarea:focus {
 	border-color: var(--primary);
+}
+
+select {
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGZpbGw9J25vbmUnIHdpZHRoPScyNCcgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDI0IDI0JyBzdHJva2U9JyNhYWFhYWEnIHN0cm9rZS13aWR0aD0nMicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz48cG9seWxpbmUgcG9pbnRzPSc2IDkgMTIgMTUgMTggOScvPjwvc3ZnPg==");
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background-repeat: no-repeat;
+	background-position-x: calc(100% - 10px);
+	background-position-y: center;
+}
+
+select::-ms-expand {
+	display: none;
 }
 
 /* Checkbox & radios */
@@ -103,7 +118,6 @@ label > input[type="checkbox"]:focus ~ span::before,
 label > input[type="radio"]:focus ~ span::before {
 	border-color: var(--primary-light);
 }
-
 
 /* Buttons */
 button {
