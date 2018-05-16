@@ -23,13 +23,13 @@ textarea {
 	margin-bottom: 20px;
 	padding: 10px 14px;
 	border: 0;
-	background-color: #eaeaea;
+	background-color: white;
 	border-radius: 2px;
 	color: var(--black);
 	font-size: 18px;
 	border: solid 2px;
-	border-color: transparent;
-	transition: border-color 200ms, background-color 200ms;
+	border-color: var(--grey);
+	transition: border-color 200ms;
 }
 textarea{
 	resize: vertical;
@@ -42,7 +42,6 @@ input[type="number"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
 	border-color: var(--primary);
-	background-color: white;
 }
 
 /* Checkbox & radios */
