@@ -5,6 +5,10 @@
 	margin-bottom: var(--grid-gutters);
 }
 
+.grid>div {
+	overflow: auto;
+}
+
 .span2 { grid-column: auto / span 2;}
 .span3 { grid-column: auto / span 3;}
 .span4 { grid-column: auto / span 4;}
