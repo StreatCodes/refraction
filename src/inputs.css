@@ -114,9 +114,15 @@ label > input[type="radio"]:checked ~ span::before {
 	content: '●';
 }
 
-label > input[type="checkbox"]:focus ~ span::before,
+label > input[type="checkbox"]:focus ~ span::before {
+	border-color: var(--primary-light);
+}
+label > input[type="checkbox"]:checked:focus ~ span::before {
+	background-color: var(--primary-light);
+}
 label > input[type="radio"]:focus ~ span::before {
 	border-color: var(--primary-light);
+	color: var(--primary-light);
 }
 
 /* Buttons */
