@@ -81,48 +81,35 @@ label > input[type="radio"] ~ span::before {
 	display: inline-block;
 	border: solid 2px;
 	border-color: #969696;
-	width: 17px;
-	height: 17px;
+	width: 18px;
+	height: 18px;
 	background-color: white;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyNCAyNCcgZmlsbD0nbm9uZScgc3Ryb2tlPSd3aGl0ZScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnIGhlaWdodD0nMTYnIHdpZHRoPScxNic+PGxpbmUgeDE9JzE4JyB5MT0nNicgeDI9JzYnIHkyPScxOCcvPjxsaW5lIHgxPSc2JyB5MT0nNicgeDI9JzE4JyB5Mj0nMTgnLz48L3N2Zz4=");
 	border-radius: 3px;
 	margin-right: 8px;
-	transition: background-color 200ms, border-color 200ms, color 200ms;
-	color: white;
-	text-align: center;
-	line-height: 16px;
-	font-size: 22px;
+	transition: background-color 200ms, border-color 200ms;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 label > input[type="radio"] ~ span::before {
 	border-radius: 50%;
-	width: 18px;
-	height: 18px;
-	line-height: 16px;
-	font-size: 20px;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlPSJ3aGl0ZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48L3N2Zz4=")
 }
 
 label > input[type="checkbox"]:checked ~ span::before,
 label > input[type="radio"]:checked ~ span::before {
-	content: '×';
 	background-color: var(--primary);
 	border-color: var(--primary);
 }
 
-label > input[type="radio"]:checked ~ span::before {
-	background-color: white;
-	color: var(--primary);
-	content: '●';
-}
-
-label > input[type="checkbox"]:focus ~ span::before {
-	border-color: var(--primary-light);
-}
-label > input[type="checkbox"]:checked:focus ~ span::before {
-	background-color: var(--primary-light);
-}
+label > input[type="checkbox"]:focus ~ span::before,
 label > input[type="radio"]:focus ~ span::before {
 	border-color: var(--primary-light);
-	color: var(--primary-light);
+}
+label > input[type="checkbox"]:checked:focus ~ span::before,
+label > input[type="radio"]:checked:focus ~ span::before {
+	background-color: var(--primary-light);
 }
 
 /* Buttons */
