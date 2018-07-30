@@ -42,4 +42,18 @@ window.addEventListener('load', event => {
 			}
 		});
 	}
+
+	const smoothScrollers = document.querySelectorAll('.smooth-scroll');
+
+	for(let el of smoothScrollers) {
+		el.addEventListener('click', event => {
+			event.preventDefault();
+			
+			const scrollTo = document.querySelector(el.getAttribute('href'));
+			window.scrollTo({
+				behavior: 'smooth',
+				top: scrollTo.offsetTop
+			});
+		});
+	}
 });
