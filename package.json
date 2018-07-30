@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "postcss src/main.css --watch -u postcss-import -o dist/bundle.css",
-    "prod": "postcss src/main.css -u postcss-import autoprefixer postcss-css-variables cssnano --no-map -o dist/bundle.css"
+    "prod": "postcss src/main.css --no-map -o dist/bundle.css"
   },
   "keywords": [
     "bootstrap",
