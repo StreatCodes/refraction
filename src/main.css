@@ -1,4 +1,3 @@
-@import 'fonts.css';
 @import 'vars.css';
 @import 'grid.css';
 @import 'nav.css';
@@ -11,7 +10,9 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol";
 	margin: 0 0 10px 0;
 	color: var(--black);
 }
