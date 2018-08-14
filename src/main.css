@@ -54,20 +54,18 @@ hr {
 }
 
 header {
-	background: linear-gradient(20deg, #00dbde, #fc00ff);
-	padding:  120px 20px 120px;
-	margin-bottom: 30px;
+	padding: 80px 0;
 }
 
 header > h1 {
-	text-align: center;
 	margin: 0 auto;
-	width: var(--page-width);
+	width: 800px;
 	max-width: 100%;
-	color: white;
-	font-size: 72px;
-	letter-spacing: 8px;
 	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 38px;
+	font-size: 78px;
+	padding: 12px;
 }
 
 @media(max-width: 640px) {
