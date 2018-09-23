@@ -68,40 +68,6 @@ header > h1 {
 	text-align: center;
 }
 
-/* This probably shouldn't be in the build */
-@media(max-width: 900px) {
-	header > h1 {
-		letter-spacing: 20px;
-	}
-}
-
-@media(max-width: 720px) {
-	header {
-		padding: 40px 0;
-	}
-	header > h1 {
-		letter-spacing: 10px;
-		font-size: 66px;
-	}
-}
-
-@media(max-width: 560px) {
-	header {
-		padding: 40px 0 20px;
-	}
-	header > h1 {
-		letter-spacing: 5px;
-		font-size: 50px;
-	}
-}
-
-@media(max-width: 400px) {
-	header > h1 {
-		letter-spacing: normal;
-		font-size: 36px;
-	}
-}
-
 footer {
 	width: var(--page-width);
 	max-width: 100%;
