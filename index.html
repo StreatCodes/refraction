@@ -104,8 +104,8 @@
 	<main>
 		<h2 spy="About" id="about">About</h2>
 		<p>Refraction is a simple lightweight CSS library. It's tiny in size, clocking at about 2KB once gzipped. Refraction is meant to serve as a starting point for new modern projects, speeding up some of the initial process of styling a site without having to import 100KB of CSS and JS which quickly goes up once you start over-riding styles.</p>
-		<p>Not only is Bootstrap's css excessive, the corresponding markup is verbose too. We've kept the markup simple, just write normal html and you'll get a modern output.</p>
-		<p>Keeping the file size small also keeps the library simple. We encourage you to clone the refraction repository and start using the modern build system we have setup. The first thing you'll want to do is modify the <code>vars.css</code> file and update the colors to reflect your projects style.</p>
+		<p>Refraction is an attempt to bring developers back to straight CSS and away from bloated frameworks. We've kept the markup simple, just write normal html and you'll get a modern output.</p>
+		<p>Keeping the file size small also keeps the library simple. Start by grabbing a copy of refaction.css and modifying it to your likings</p>
 
 		<hr />
 		
@@ -154,13 +154,13 @@
 			<div class="span4">
 				<label>
 					<span>Name</span>
-					<input type="text" placeholder="Killa Streats">
+					<input type="text" placeholder="John Smith">
 				</label>
 			</div>
 			<div class="span4">
 				<label>
 					<span>Email</span>
-					<input type="email" placeholder="streats@example.com">
+					<input type="email" placeholder="john@example.com">
 				</label>
 			</div>
 			<div class="span4">
@@ -172,13 +172,13 @@
 			<div class="span4">
 				<label>
 					<span>Password</span>
-					<input type="password" placeholder="s3cUr3BoiZ">
+					<input type="password" placeholder="super_p@ssw0rd">
 				</label>
 			</div>
 			<div class="span8">
 				<label>
 					<span>Describe yourself</span>
-					<textarea placeholder="I'm a really cool guy"></textarea>
+					<textarea placeholder="I love a simple, lightweight approach."></textarea>
 				</label>
 			</div>
 			<div class="span12">
@@ -202,7 +202,7 @@
 		</h3>
 		<div class="grid">
 			<div class="span6">
-				<p>Which lagnuages are good?</p>
+				<p>What languages do you enjoy?</p>
 				<label>
 					<input type="checkbox" checked>
 					<span>Go</span>
@@ -453,7 +453,7 @@
 		<hr />
 
 		<h2 spy="Variables" id="variables">Variables</h2>
-		<p>You can modify the basic appearance of Refraction just by making changes to <code>vars.css</code>. We use native CSS variables that get parsed at build time with <code>postcss-css-variables</code> a PostCSS plugin. This way we can keep compatability with IE11. PostCSS is a powerful modern css tool that uses javascript plugins to transform CSS.</p>
+		<p>You can modify the basic appearance of Refraction just by making changes to the CSS variables found at the top of <code>refraction.css</code>.</p>
 
 		<hr />
 
